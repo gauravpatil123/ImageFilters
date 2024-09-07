@@ -207,6 +207,9 @@ public class ImageStyle {
             ImageStyle IS2 = new ImageStyle(inImage);
             IS2.convert("grayScale");
 
+            ImageStyle IS3 = new ImageStyle(inImage);
+            IS3.convert("Color");
+
         }
 
     }
