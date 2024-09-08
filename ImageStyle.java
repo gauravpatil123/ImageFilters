@@ -194,7 +194,8 @@ public class ImageStyle {
         for(File f : dr.selectedFiles()) {
 
             //String option = args[0]; // Make this work
-        /*
+            //for loop iterate string arguments
+            /*
             ImageResource inImage = new ImageResource(f);
             ImageStyle IS = new ImageStyle(inImage);
             IS.convert("grayScale");
