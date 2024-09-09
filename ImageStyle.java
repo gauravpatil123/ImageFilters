@@ -200,12 +200,12 @@ public class ImageStyle {
 
             String arg = args[0];
             System.out.println("Started conversion for "+arg);
-            ImageStyle IS = new ImageStyle(inImage);
-            IS.convert(arg);
-            System.out.println("Ended conversion");
-
             // ImageStyle IS = new ImageStyle(inImage);
-            // IS.convert("Side_Mirror");
+            // IS.convert(arg);
+            // System.out.println("Ended conversion");
+
+            ImageStyle IS = new ImageStyle(inImage);
+            IS.convert("Side_Mirror");
 
             /*
             ImageResource inImage = new ImageResource(f);
