@@ -114,7 +114,7 @@ public class ImageStyle {
 
     public void convert(String Filter) {
 
-        if(Filter == "grayScale") {
+        if(Filter.equals("grayScale")) {
             ImageResource GreyImage = greyScale();
             GreyImage.draw();
             String ImageName = Image.getFileName();
@@ -122,15 +122,6 @@ public class ImageStyle {
             GreyImage.setFileName(GSImage);
             GreyImage.save();
         }
-        
-        // if(Filter == "Purple") {
-        //     ImageResource PImage = PurpleFilter();
-        //     PImage.draw();
-        //     String ImageName = Image.getFileName();
-        //     String PI = "PI-"+ImageName;
-        //     PImage.setFileName(PI);
-        //     PImage.save();
-        // }
 
         if(Filter.equals("Purple")) {
             ImageResource PImage = PurpleFilter();
@@ -141,7 +132,7 @@ public class ImageStyle {
             PImage.save();
         }
 
-        if(Filter == "Saffron") {
+        if(Filter.equals("Saffron")) {
             ImageResource SImage = SaffronFilter();
             SImage.draw();
             String ImageName = Image.getFileName();
@@ -150,7 +141,7 @@ public class ImageStyle {
             SImage.save();
         }
 
-        if(Filter == "Color") {
+        if(Filter.equals("Color")) {
             ImageResource CImage = ColorFilter(100, 60, 20);
             CImage.draw();
             String ImageName = Image.getFileName();
@@ -159,7 +150,7 @@ public class ImageStyle {
             CImage.save();
         }
 
-        if(Filter == "Side_Mirror") {
+        if(Filter.equals("Side_Mirror")) {
             ImageResource SMI = SideMirror();
             SMI.draw();
             String ImageName = Image.getFileName();
@@ -168,7 +159,7 @@ public class ImageStyle {
             SMI.save();
         }
 
-        if(Filter == "Top_Mirror") {
+        if(Filter.equals("Top_Mirror")) {
             ImageResource TMI = TopMirror();
             TMI.draw();
             String ImageName = Image.getFileName();
@@ -177,7 +168,7 @@ public class ImageStyle {
             TMI.save();
         }
 
-        if(Filter == "Contrast") {
+        if(Filter.equals("Contrast")) {
             ImageResource CTI = ContrastFilter();
             CTI.draw();
             String ImageName = Image.getFileName();
@@ -186,7 +177,7 @@ public class ImageStyle {
             CTI.save();
         }
 
-        if(Filter == "Indian_Flag") {
+        if(Filter.equals("Indian_Flag")) {
             ImageResource IFI = IndianFlag();
             IFI.draw();
             String ImageName = Image.getFileName();
@@ -207,11 +198,19 @@ public class ImageStyle {
 
             ImageResource inImage = new ImageResource(f);
 
-            String arg = args[0];
-            System.out.println("Started conversion for "+arg);
-            ImageStyle IS = new ImageStyle(inImage);
-            IS.convert(arg);
-            System.out.println("Ended conversion");
+            for (String arg : args) {
+
+                System.out.println("Started conversion for "+arg);
+                ImageStyle IS = new ImageStyle(inImage);
+                IS.convert(arg);
+                System.out.println("Ended conversion for "+arg);
+                    
+            }
+
+            // System.out.println("Started conversion for "+arg);
+            // ImageStyle IS = new ImageStyle(inImage);
+            // IS.convert(arg);
+            // System.out.println("Ended conversion");
 
             // ImageStyle IS = new ImageStyle(inImage);
             // IS.convert("Side_Mirror");
