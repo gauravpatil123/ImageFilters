@@ -198,14 +198,14 @@ public class ImageStyle {
 
             ImageResource inImage = new ImageResource(f);
 
-            for(String arg : args) {
+            String arg = args[0];
 
-                System.out.println("Started loop for"+arg);
-                ImageStyle IS = new ImageStyle(inImage);
-                IS.convert(arg);
-                System.out.println("Ended conversion");
+            System.out.println("Started conversion for"+arg);
+            ImageStyle IS = new ImageStyle(inImage);
+            IS.convert(arg);
+            System.out.println("Ended conversion");
 
-            }
+            
 
 
             /*
