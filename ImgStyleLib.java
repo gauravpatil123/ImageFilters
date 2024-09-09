@@ -165,4 +165,42 @@ public class ImgStyleLib {
         return pix;
     }
 
+    public Pixel RandomPix2(Pixel pix, int px, int py, int cx, int cy) {
+        
+        System.out.println("Random Pixels type 2\t"+px+","+py);
+        int Px = px - cx;
+        int Py = py - cy;
+        Pixel inPixel = inImage.getPixel(Px, Py);
+        int Red = inPixel.getRed();
+        int Green = inPixel.getGreen();
+        int Blue = inPixel.getBlue();
+        Random rand = new Random();
+        int const_value = rand.nextInt(3);
+        if (const_value == 0) {
+            //const R value
+            int rand_fill_g = rand.nextInt(256);
+            int rand_fill_b = rand.nextInt(256);
+            pix.setRed(Red);
+            pix.setGreen(rand_fill_g);
+            pix.setBlue(rand_fill_b);
+        } else if (const_value == 1) {
+            //const G value
+            int rand_fill_r = rand.nextInt(256);
+            int rand_fill_b = rand.nextInt(256);
+            pix.setRed(rand_fill_r);
+            pix.setGreen(Green);
+            pix.setBlue(rand_fill_b);
+        } else if (const_value == 2) {
+            //const B value
+            int rand_fill_r = rand.nextInt(256);
+            int rand_fill_g = rand.nextInt(256);
+            pix.setRed(rand_fill_r);
+            pix.setGreen(rand_fill_g);
+            pix.setBlue(Blue);
+
+        }
+        
+        return pix;
+    }
+
 }
