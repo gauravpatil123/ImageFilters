@@ -112,6 +112,17 @@ public class ImageStyle {
         return IFI;
     }
 
+    public ImageResource RandomPix() {
+        ImageResource RDP = new ImageResource(Width, Height);
+        ImgStyleLib ISL = new ImgStyleLib(Image);
+        for (Pixel pixel : RDP.pixels()) {
+            int px = pixel.getX();
+            int py = pixel.getY();
+            pixel = ISL.RandomPix(pixel, px, py, 0, 0);
+        }
+        return RDP;
+    }
+
     public void convert(String Filter) {
 
         if(Filter.equals("grayScale")) {

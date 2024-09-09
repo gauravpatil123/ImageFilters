@@ -1,6 +1,7 @@
 import edu.duke.*;
 import org.apache.commons.csv.*;
 import java.io.*;
+import java.util.Random;
 
 public class ImgStyleLib {
 
@@ -127,6 +128,41 @@ public class ImgStyleLib {
         pix.setBlue(Blue);
         return pix;
 
+    }
+
+    public Pixel RandomPix(Pixel pix, int px, int py, int cx, int cy) {
+        
+        System.out.println("Random Pixels\t"+px+","+py);
+        int Px = px - cx;
+        int Py = py - cy;
+        Pixel inPixel = inImage.getPixel(Px, Py);
+        int Red = inPixel.getRed();
+        int Green = inPixel.getGreen();
+        int Blue = inPixel.getBlue();
+        Random rand = new Random();
+        int const_value = rand.nextInt(3);
+        if (const_value == 0) {
+            //changing R value
+            int rand_fill_r = rand.nextInt(256);
+            pix.setRed(rand_fill_r);
+            pix.setGreen(Green);
+            pix.setBlue(Blue);
+        } else if (const_value == 1) {
+            //changing G value
+            int rand_fill_g = rand.nextInt(256);
+            pix.setRed(Red);
+            pix.setGreen(rand_fill_g);
+            pix.setBlue(Blue);
+        } else if (const_value == 2) {
+            //changing B value
+            int rand_fill_b = rand.nextInt(256);
+            pix.setRed(Red);
+            pix.setGreen(Green);
+            pix.setBlue(rand_fill_b);
+
+        }
+        
+        return pix;
     }
 
 }
