@@ -123,6 +123,17 @@ public class ImageStyle {
         return RDP;
     }
 
+    public ImageResource RandomPix2() {
+        ImageResource RDP2 = new ImageResource(Width, Height);
+        ImgStyleLib ISL = new ImgStyleLib(Image);
+        for (Pixel pixel : RDP2.pixels()) {
+            int px = pixel.getX();
+            int py = pixel.getY();
+            pixel = ISL.RandomPix(pixel, px, py, 0, 0);
+        }
+        return RDP2;
+    }
+
     public void convert(String Filter) {
 
         if(Filter.equals("grayScale")) {
@@ -204,6 +215,15 @@ public class ImageStyle {
             String RI = "RDI_"+ImageName;
             RDI.setFileName(RI);
             RDI.save();
+        }
+
+        if(Filter.equals("RandomPix2")) {
+            ImageResource RDI2 = RandomPix();
+            RDI2.draw();
+            String ImageName = Image.getFileName();
+            String RI2 = "RDI2_"+ImageName;
+            RDI2.setFileName(RI2);
+            RDI2.save();
         }
 
     }
