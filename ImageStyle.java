@@ -195,7 +195,16 @@ public class ImageStyle {
             String IF = "IFI-"+ImageName;
             IFI.setFileName(IF);
             IFI.save();
-        } 
+        }
+        
+        if(Filter.equals("RandomPix")) {
+            ImageResource RDI = RandomPix();
+            RDI.draw();
+            String ImageName = Image.getFileName();
+            String RI = "RDI_"+ImageName;
+            RDI.setFileName(RI);
+            RDI.save();
+        }
 
     }
 
