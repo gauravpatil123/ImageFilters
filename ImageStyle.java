@@ -150,7 +150,7 @@ public class ImageStyle {
             CImage.save();
         }
 
-        if(Filter == "Side Mirror") {
+        if(Filter == "Side_Mirror") {
             ImageResource SMI = SideMirror();
             SMI.draw();
             String ImageName = Image.getFileName();
@@ -159,7 +159,7 @@ public class ImageStyle {
             SMI.save();
         }
 
-        if(Filter == "Top Mirror") {
+        if(Filter == "Top_Mirror") {
             ImageResource TMI = TopMirror();
             TMI.draw();
             String ImageName = Image.getFileName();
@@ -177,7 +177,7 @@ public class ImageStyle {
             CTI.save();
         }
 
-        if(Filter == "Indian Flag") {
+        if(Filter == "Indian_Flag") {
             ImageResource IFI = IndianFlag();
             IFI.draw();
             String ImageName = Image.getFileName();
