@@ -200,8 +200,10 @@ public class ImageStyle {
 
             for(String arg : args) {
 
+                System.out.println("Started loop");
                 ImageStyle IS = new ImageStyle(inImage);
                 IS.convert(arg);
+                System.out.println("Ended conversion");
 
             }
 
