@@ -207,29 +207,6 @@ public class ImageStyle {
                     
             }
 
-            // System.out.println("Started conversion for "+arg);
-            // ImageStyle IS = new ImageStyle(inImage);
-            // IS.convert(arg);
-            // System.out.println("Ended conversion");
-
-            // ImageStyle IS = new ImageStyle(inImage);
-            // IS.convert("Side_Mirror");
-
-            /*
-            ImageResource inImage = new ImageResource(f);
-            ImageStyle IS = new ImageStyle(inImage);
-            IS.convert("grayScale");
-            */
-
-            // ImageStyle IS = new ImageStyle(inImage);
-            // IS.convert("Contrast");
-
-            // ImageStyle IS2 = new ImageStyle(inImage);
-            // IS2.convert("grayScale");
-
-            // ImageStyle IS3 = new ImageStyle(inImage);
-            // IS3.convert("Color");
-
         }
 
     }
