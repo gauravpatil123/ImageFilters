@@ -195,21 +195,31 @@ public class ImageStyle {
 
             //String option = args[0]; // Make this work
             //for loop iterate string arguments
+
+            ImageResource inImage = new ImageResource(f);
+
+            for(String arg : args) {
+
+                ImageStyle IS = new ImageStyle(inImage);
+                IS.convert(arg);
+
+            }
+
+
             /*
             ImageResource inImage = new ImageResource(f);
             ImageStyle IS = new ImageStyle(inImage);
             IS.convert("grayScale");
             */
 
-            ImageResource inImage = new ImageResource(f);
-            ImageStyle IS = new ImageStyle(inImage);
-            IS.convert("Contrast");
+            // ImageStyle IS = new ImageStyle(inImage);
+            // IS.convert("Contrast");
 
-            ImageStyle IS2 = new ImageStyle(inImage);
-            IS2.convert("grayScale");
+            // ImageStyle IS2 = new ImageStyle(inImage);
+            // IS2.convert("grayScale");
 
-            ImageStyle IS3 = new ImageStyle(inImage);
-            IS3.convert("Color");
+            // ImageStyle IS3 = new ImageStyle(inImage);
+            // IS3.convert("Color");
 
         }
 
