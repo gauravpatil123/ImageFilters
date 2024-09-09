@@ -198,8 +198,8 @@ public class ImageStyle {
 
             ImageResource inImage = new ImageResource(f);
 
-            // String arg = args[0];
-            // System.out.println("Started conversion for "+arg);
+            String arg = args[0];
+            System.out.println("Started conversion for "+arg);
             // ImageStyle IS = new ImageStyle(inImage);
             // IS.convert(arg);
             // System.out.println("Ended conversion");
