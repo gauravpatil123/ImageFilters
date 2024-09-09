@@ -123,7 +123,16 @@ public class ImageStyle {
             GreyImage.save();
         }
         
-        if(Filter == "Purple") {
+        // if(Filter == "Purple") {
+        //     ImageResource PImage = PurpleFilter();
+        //     PImage.draw();
+        //     String ImageName = Image.getFileName();
+        //     String PI = "PI-"+ImageName;
+        //     PImage.setFileName(PI);
+        //     PImage.save();
+        // }
+
+        if(Filter.equals("Purple")) {
             ImageResource PImage = PurpleFilter();
             PImage.draw();
             String ImageName = Image.getFileName();
@@ -200,12 +209,12 @@ public class ImageStyle {
 
             String arg = args[0];
             System.out.println("Started conversion for "+arg);
-            // ImageStyle IS = new ImageStyle(inImage);
-            // IS.convert(arg);
-            // System.out.println("Ended conversion");
-
             ImageStyle IS = new ImageStyle(inImage);
-            IS.convert("Side_Mirror");
+            IS.convert(arg);
+            System.out.println("Ended conversion");
+
+            // ImageStyle IS = new ImageStyle(inImage);
+            // IS.convert("Side_Mirror");
 
             /*
             ImageResource inImage = new ImageResource(f);
