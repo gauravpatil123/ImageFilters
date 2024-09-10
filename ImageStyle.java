@@ -257,6 +257,15 @@ public class ImageStyle {
             SPX.save();
         }
 
+        if(Filter.equals("SwitchRandPix")) {
+            ImageResource SPRX = SwitchRandPix();
+            SPRX.draw();
+            String ImageName = Image.getFileName();
+            String SRI = "SPRX_"+ImageName;
+            SPRX.setFileName(SRI);
+            SPRX.save();
+        }
+
     }
 
     public static void main(String[] args) {
