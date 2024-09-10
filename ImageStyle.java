@@ -237,6 +237,15 @@ public class ImageStyle {
             RDI2.save();
         }
 
+        if(Filter.equals("SwitchPix")) {
+            ImageResource SPX = SwitchPix();
+            SPX.draw();
+            String ImageName = Image.getFileName();
+            String SI = "SPX_"+ImageName;
+            SPX.setFileName(SI);
+            SPX.save();
+        }
+
     }
 
     public static void main(String[] args) {
