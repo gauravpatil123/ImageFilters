@@ -145,6 +145,17 @@ public class ImageStyle {
         return SPX;
     }
 
+    public ImageResource SwitchRandPix() {
+        ImageResource SPRX = new ImageResource(Width, Height);
+        ImgStyleLib ISL = new ImgStyleLib(Image);
+        for (Pixel pixel : SPRX.pixels()) {
+            int px = pixel.getX();
+            int py = pixel.getY();
+            pixel = ISL.SwitchRandPix(pixel, px, py, 0, 0);
+        }
+        return SPRX;
+    }
+
     public void convert(String Filter) {
 
         if(Filter.equals("grayScale")) {
