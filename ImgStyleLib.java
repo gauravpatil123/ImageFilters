@@ -218,4 +218,39 @@ public class ImgStyleLib {
         return pix;
     }
 
+    public Pixel SwitchRandPix(Pixel pix, int px, int py, int cx, int cy) {
+        
+        System.out.println("Switch Random Pixels \t"+px+","+py);
+        int Px = px - cx;
+        int Py = py - cy;
+        Pixel inPixel = inImage.getPixel(Px, Py);
+        Random rand = new Random();
+        int const_value = rand.nextInt(3);
+
+        if(const_value == 0) {
+            int Red = inPixel.getBlue();
+            int Green = inPixel.getRed();
+            int Blue = inPixel.getGreen();
+            pix.setRed(Red);
+            pix.setGreen(Green);
+            pix.setBlue(Blue);
+        } else if (const_value == 1) {
+            int Red = inPixel.getGreen();
+            int Green = inPixel.getBlue();
+            int Blue = inPixel.getRed();
+            pix.setRed(Red);
+            pix.setGreen(Green);
+            pix.setBlue(Blue);
+        } else if (const_value == 2) {
+            int Red = inPixel.getRed();
+            int Green = inPixel.getGreen();
+            int Blue = inPixel.getBlue();
+            pix.setRed(Red);
+            pix.setGreen(Green);
+            pix.setBlue(Blue);
+        }
+        
+        return pix;
+    }
+
 }
