@@ -12,7 +12,7 @@ def command_choice(flist):
     if ans == "Y":
         counter = 1
         for filter in flist:
-            print(counter+") java ImageStyle "+filter)
+            print(str(counter)+") java ImageStyle "+filter)
     elif ans == "N":
         print("END")
 
