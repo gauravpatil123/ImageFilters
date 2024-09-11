@@ -20,6 +20,7 @@ def main(flist=FEATURE_LIST):
     print("Filters for Image conversion:")
     for filter in flist:
         print(filter)
+    command_choice(flist)
 
 
 if __name__ == "__main__":
