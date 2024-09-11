@@ -13,6 +13,7 @@ def command_choice(flist):
         counter = 1
         for filter in flist:
             print(str(counter)+") java ImageStyle "+filter)
+            counter += 1
     elif ans == "N":
         print("END")
 
