@@ -6,6 +6,8 @@ FEATURE_LIST = ["grayScale", "Purple", "Saffron", "Color",
                 "Side_Mirror", "Top_Mirror", "Contrast", "Indian_Flag", 
                 "RandomPix", "RandomPix2", "SwitchPix", "SwitchRandPix"]
 
+#TODO: add feature to execute java commands directly to the terminal
+
 def command_choice(flist):
     print("Do you want conversion commands? (Y/N)")
     inp = str(input())
