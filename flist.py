@@ -8,13 +8,13 @@ FEATURE_LIST = ["grayScale", "Purple", "Saffron", "Color",
 
 def command_choice(flist):
     print("Do you want conversion commands? (Y/N)")
-    ans = str(input())
-    if ans == "Y":
+    inp = str(input())
+    if inp == "Y":
         counter = 1
         for filter in flist:
             print(str(counter)+") java ImageStyle "+filter)
             counter += 1
-    elif ans == "N":
+    elif inp == "N":
         print("END")
 
 def main(flist=FEATURE_LIST):
