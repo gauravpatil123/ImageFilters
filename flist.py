@@ -7,6 +7,7 @@ FEATURE_LIST = ["grayScale", "Purple", "Saffron", "Color",
                 "RandomPix", "RandomPix2", "SwitchPix", "SwitchRandPix"]
 
 #TODO: add feature to execute java commands directly to the terminal
+#TODO: add loading screen feature for image conversion
 
 def command_choice(flist):
     print("Do you want conversion commands? (Y/N)")
