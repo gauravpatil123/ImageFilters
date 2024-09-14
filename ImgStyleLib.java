@@ -30,9 +30,25 @@ public class ImgStyleLib {
         if(percent < 10) {
             out =  "|> |  |  |  |  |  |  |  |  |  |";
         } else if(percent < 20) {
-            out =  "|==|> |  |  |  |  |  |  |  |  |";
+            out = "|==|> |  |  |  |  |  |  |  |  |";
         } else if(percent < 30) {
             out = "|==|==|> |  |  |  |  |  |  |  |";
+        } else if(percent < 40) {
+            out = "|==|==|==|> |  |  |  |  |  |  |";
+        } else if (percent < 50) {
+            out = "|==|==|==|==|> |  |  |  |  |  |";   
+        } else if(percent < 60) {
+            out = "|==|==|==|==|==|> |  |  |  |  |";
+        } else if (percent < 70) {
+            out = "|==|==|==|==|==|==|> |  |  |  |";
+        } else if (percent < 80) {
+            out = "|==|==|==|==|==|==|==|> |  |  |";
+        } else if (percent < 90) {
+            out = "|==|==|==|==|==|==|==|==|> |  |";
+        } else if (percent < 100) {
+            out = "|==|==|==|==|==|==|==|==|==|> |";
+        } else if (percent == 100) {
+            out = "|==|==|==|==|==|==|==|==|==|==|";
         }
         return out;
     }
