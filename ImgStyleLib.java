@@ -21,6 +21,10 @@ public class ImgStyleLib {
 
     }
 
+    public void log(String inp) {
+        System.out.println(inp);
+    }
+
     public Pixel greyPix(Pixel pixel, int px, int py, int cx, int cy) {
 
         System.out.println("Grey Pixels\t"+px+","+py);
