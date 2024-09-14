@@ -25,6 +25,18 @@ public class ImgStyleLib {
         System.out.println(inp);
     }
 
+    public String loader(int percent) {
+        String out = "|> |  |  |  |  |  |  |  |  |  |";
+        if(percent < 10) {
+            out =  "|> |  |  |  |  |  |  |  |  |  |";
+        } else if(percent < 20) {
+            out =  "|==|> |  |  |  |  |  |  |  |  |";
+        } else if(percent < 30) {
+            out = "|==|==|> |  |  |  |  |  |  |  |";
+        }
+        return out;
+    }
+
     public Pixel greyPix(Pixel pixel, int px, int py, int cx, int cy) {
 
         System.out.println("Grey Pixels\t"+px+","+py);
