@@ -60,6 +60,9 @@ public class ImageStyle {
         for(Pixel pixel : GreyImage.pixels()) {
             int px = pixel.getX();
             int py = pixel.getY();
+            int progress = calculateProgress(Height, py);
+            String pbar = loader(progress);
+            log(pbar);
             pixel = ISL.greyPix(pixel, px, py, 0, 0);
         }
         return GreyImage;
