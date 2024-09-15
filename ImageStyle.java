@@ -24,7 +24,7 @@ public class ImageStyle {
 
         float percent = (float)py/(float)Height;
         percent = percent * 100;
-        log(String.valueOf(percent));
+        //log(String.valueOf(percent));
         return (int)percent;
     }
 
@@ -63,9 +63,9 @@ public class ImageStyle {
             int px = pixel.getX();
             int py = pixel.getY();
             int progress = calculateProgress(Height, py);
-            log("progress percent = "+String.valueOf(progress));
-            //String pbar = loader(progress);
-            //log(pbar);
+            //log("progress percent = "+String.valueOf(progress));
+            String pbar = loader(progress);
+            log(pbar);
             pixel = ISL.greyPix(pixel, px, py, 0, 0);
         }
         return GreyImage;
