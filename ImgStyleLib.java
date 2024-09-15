@@ -27,7 +27,7 @@ public class ImgStyleLib {
 
     public Pixel greyPix(Pixel pixel, int px, int py, int cx, int cy) {
 
-        System.out.println("Grey Pixels\t"+px+","+py);
+        //System.out.println("Grey Pixels\t"+px+","+py);
         int Px = px - cx;
         int Py = py - cy;
         Pixel inPixel = inImage.getPixel(Px, Py);
