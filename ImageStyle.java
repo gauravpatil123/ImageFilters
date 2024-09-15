@@ -23,6 +23,7 @@ public class ImageStyle {
     public int calculateProgress(int Height, int py) {
         float percent = py/Height;
         percent = percent * 100;
+        log(String.valueOf(percent));
         return (int)percent;
     }
 
