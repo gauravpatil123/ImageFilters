@@ -72,6 +72,8 @@ public class ImageStyle {
             int px = pixel.getX();
             int py = pixel.getY();
             int progress = calculateProgress(Height, py);
+            String pbar = loader(progress);
+            log(pbar);
             pixel = ISL.contrastPix(pixel, px, py, 0, 0);
         }
         return ContrastImage;
