@@ -21,9 +21,9 @@ public class ImageStyle {
     }
 
     public int calculateProgress(int Height, int py) {
-        int percent = py/Height;
+        float percent = py/Height;
         percent = percent * 100;
-        return percent;
+        return (int)percent;
     }
 
     public String loader(int percent) {
