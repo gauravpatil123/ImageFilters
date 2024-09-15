@@ -16,6 +16,10 @@ public class ImageStyle {
 
     }
 
+    public void log(String inp) {
+        System.out.println(inp);
+    }
+
     public ImageResource greyScale(){ 
         ImageResource GreyImage = new ImageResource(Width, Height);
         ImgStyleLib ISL = new ImgStyleLib(Image);
