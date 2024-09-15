@@ -20,6 +20,12 @@ public class ImageStyle {
         System.out.println(inp);
     }
 
+    public int calculateProgress(int Height, int py) {
+        int percent = py/Height;
+        percent = percent * 100;
+        return percent;
+    }
+
     public ImageResource greyScale(){ 
         ImageResource GreyImage = new ImageResource(Width, Height);
         ImgStyleLib ISL = new ImgStyleLib(Image);
