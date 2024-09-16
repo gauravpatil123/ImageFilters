@@ -56,6 +56,12 @@ public class ImageStyle {
         return out;
     }
 
+    public void pbar(int Height, int py) {
+        int progress = calculateProgress(Height, py);
+        String pbar = loader(progress);
+        log(pbar);
+    }
+
     public ImageResource greyScale(){ 
         ImageResource GreyImage = new ImageResource(Width, Height);
         ImgStyleLib ISL = new ImgStyleLib(Image);
