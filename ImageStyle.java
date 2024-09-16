@@ -331,9 +331,6 @@ public class ImageStyle {
         DirectoryResource dr = new DirectoryResource();
         for(File f : dr.selectedFiles()) {
 
-            //String option = args[0]; // Make this work
-            //for loop iterate string arguments
-
             ImageResource inImage = new ImageResource(f);
 
             for (String arg : args) {
