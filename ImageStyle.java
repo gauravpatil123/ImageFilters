@@ -104,9 +104,7 @@ public class ImageStyle {
         for(Pixel pixel : SImage.pixels()) {
             int px = pixel.getX();
             int py = pixel.getY();
-            int progress = calculateProgress(Height, py);
-            String pbar = loader(progress);
-            log(pbar);
+            pbar(Height, py);
             pixel = ISL.SaffronPix(pixel, px, py, 0, 0);
         }
         return SImage;
