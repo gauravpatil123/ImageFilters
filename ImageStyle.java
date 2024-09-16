@@ -63,7 +63,6 @@ public class ImageStyle {
             int px = pixel.getX();
             int py = pixel.getY();
             int progress = calculateProgress(Height, py);
-            //log("progress percent = "+String.valueOf(progress));
             String pbar = loader(progress);
             log(pbar);
             pixel = ISL.greyPix(pixel, px, py, 0, 0);
@@ -91,6 +90,9 @@ public class ImageStyle {
         for(Pixel pixel : PImage.pixels()) {
             int px = pixel.getX();
             int py = pixel.getY();
+            int progress = calculateProgress(Height, py);
+            String pbar = loader(progress);
+            log(pbar);
             pixel = ISL.PurplePix(pixel, px, py, 0, 0);
         }
         return PImage;
