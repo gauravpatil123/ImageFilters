@@ -43,7 +43,7 @@ public class ImgStyleLib {
 
     public Pixel contrastPix(Pixel pix, int px, int py, int cx, int cy) {
 
-        System.out.println("Contrast Pixels\t"+px+","+py);
+        //System.out.println("Contrast Pixels\t"+px+","+py);
         int Px = px - cx;
         int Py = py - cy;
         Pixel inPixel = inImage.getPixel(Px, Py);
@@ -59,7 +59,7 @@ public class ImgStyleLib {
 
     public Pixel PurplePix(Pixel pix, int px, int py, int cx, int cy) {
 
-        System.out.println("Purple Pixels\t"+px+","+py);
+        //System.out.println("Purple Pixels\t"+px+","+py);
         int Px = px - cx;
         int Py = py - cy;
         Pixel inPixel = inImage.getPixel(Px, Py);
@@ -73,7 +73,7 @@ public class ImgStyleLib {
 
     public Pixel SaffronPix(Pixel pix, int px, int py, int cx, int cy) {
 
-        System.out.println("Saffron Pixels\t"+px+","+py);
+        //System.out.println("Saffron Pixels\t"+px+","+py);
         int Px = px - cx;
         int Py = py - cy;
         Pixel inPixel = inImage.getPixel(Px, Py);
@@ -89,7 +89,7 @@ public class ImgStyleLib {
 
     public Pixel RedPix(Pixel pix, int px, int py, int cx, int cy) {
 
-        System.out.println("Red Pixels\t"+px+","+py);
+        //System.out.println("Red Pixels\t"+px+","+py);
         int Px = px - cx;
         int Py = py - cy;
         Pixel inPixel = inImage.getPixel(Px, Py);
@@ -105,7 +105,7 @@ public class ImgStyleLib {
     public Pixel ColorPix(Pixel pix, int px, int py, int cx, int cy, int R, int
             G, int B) {
 
-        System.out.println("Color Pixel\t"+px+","+py);
+        //System.out.println("Color Pixel\t"+px+","+py);
         int Px = px - cx;
         int Py = py - cy;
         Pixel inPixel = inImage.getPixel(Px, Py);
@@ -121,7 +121,7 @@ public class ImgStyleLib {
 
     public Pixel MirrorPix(Pixel pix, int px, int py, int cx, int cy) {
 
-        System.out.println("Mirror Pixel\t"+px+","+py);
+        //System.out.println("Mirror Pixel\t"+px+","+py);
         int Px = px - cx;
         int Py = py - cy;
         Pixel inPixel = inImage.getPixel(Px, Py);
@@ -137,7 +137,7 @@ public class ImgStyleLib {
 
     public Pixel RandomPix(Pixel pix, int px, int py, int cx, int cy) {
         
-        System.out.println("Random Pixels\t"+px+","+py);
+        //System.out.println("Random Pixels\t"+px+","+py);
         int Px = px - cx;
         int Py = py - cy;
         Pixel inPixel = inImage.getPixel(Px, Py);
@@ -172,7 +172,7 @@ public class ImgStyleLib {
 
     public Pixel RandomPix2(Pixel pix, int px, int py, int cx, int cy) {
         
-        System.out.println("Random Pixels type 2\t"+px+","+py);
+        //System.out.println("Random Pixels type 2\t"+px+","+py);
         int Px = px - cx;
         int Py = py - cy;
         Pixel inPixel = inImage.getPixel(Px, Py);
@@ -210,7 +210,7 @@ public class ImgStyleLib {
 
     public Pixel SwitchPix(Pixel pix, int px, int py, int cx, int cy) {
         
-        System.out.println("Switch Pixels \t"+px+","+py);
+        //System.out.println("Switch Pixels \t"+px+","+py);
         int Px = px - cx;
         int Py = py - cy;
         Pixel inPixel = inImage.getPixel(Px, Py);
@@ -225,7 +225,7 @@ public class ImgStyleLib {
 
     public Pixel SwitchRandPix(Pixel pix, int px, int py, int cx, int cy) {
         
-        System.out.println("Switch Random Pixels \t"+px+","+py);
+        //System.out.println("Switch Random Pixels \t"+px+","+py);
         int Px = px - cx;
         int Py = py - cy;
         Pixel inPixel = inImage.getPixel(Px, Py);
