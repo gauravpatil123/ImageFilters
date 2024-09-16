@@ -160,6 +160,9 @@ public class ImageStyle {
         for(Pixel pixel : IFI.pixels()) {
             int px = pixel.getX();
             int py = pixel.getY();
+            int progress = calculateProgress(Height, py);
+            String pbar = loader(progress);
+            log(pbar);
             if(py <= (Height/3) ) {
                 pixel = ISL.SaffronPix(pixel, px, py, 0, 0);
             }
