@@ -196,9 +196,7 @@ public class ImageStyle {
         for (Pixel pixel : SPX.pixels()) {
             int px = pixel.getX();
             int py = pixel.getY();
-            int progress = calculateProgress(Height, py);
-            String pbar = loader(progress);
-            log(pbar);
+            pbar(Height, py);
             pixel = ISL.SwitchPix(pixel, px, py, 0, 0);
         }
         return SPX;
@@ -210,9 +208,7 @@ public class ImageStyle {
         for (Pixel pixel : SPRX.pixels()) {
             int px = pixel.getX();
             int py = pixel.getY();
-            int progress = calculateProgress(Height, py);
-            String pbar = loader(progress);
-            log(pbar);
+            pbar(Height, py);
             pixel = ISL.SwitchRandPix(pixel, px, py, 0, 0);
         }
         return SPRX;
