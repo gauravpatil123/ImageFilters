@@ -6,6 +6,8 @@ FEATURE_LIST = ["grayScale", "Purple", "Saffron", "Color",
                 "Side_Mirror", "Top_Mirror", "Contrast", "Indian_Flag", 
                 "RandomPix", "RandomPix2", "SwitchPix", "SwitchRandPix"]
 
+FEATURE_DICT = {}
+
 #TODO: add feature to execute java commands directly to the terminal
 #TODO: add loading screen feature for image conversion ===? in progress on ls
 
