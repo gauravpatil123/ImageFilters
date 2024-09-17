@@ -31,7 +31,7 @@ def command_choice(flist:list):
         choice = input("Input filter choice number for image conversion.")
         slected_filter = FEATURE_DICT[int(choice)]
         conv_command = "java ImageStyle "+ slected_filter
-        print("Chosen filter is "+choice+"/nDo you want to proceed? (Y/N)")
+        print("Chosen filter is "+slected_filter+"\nDo you want to proceed? (Y/N)\n")
         proceed = str(input())
         if proceed == "Y":
             os.system(conv_command)
