@@ -28,8 +28,8 @@ def command_choice(flist:list):
         for filter in flist:
             print(str(counter)+") java ImageStyle "+filter)
             counter += 1
-        choice = int(input("Input filter choice number for image conversion."))
-        slected_filter = FEATURE_DICT[choice]
+        choice = input("Input filter choice number for image conversion.")
+        slected_filter = FEATURE_DICT[int(choice)]
         conv_command = "java ImageStyle "+ slected_filter
         print("Chosen filter is "+choice+"/nDo you want to proceed? (Y/N)")
         proceed = str(input())
