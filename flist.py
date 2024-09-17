@@ -12,7 +12,10 @@ FEATURE_DICT = {}
 #TODO: add loading screen feature for image conversion ===? in progress on ls
 
 def create_fdict(flist=FEATURE_LIST):
-    pass
+    global FEATURE_DICT
+    for idx in range(len(flist)):
+        FEATURE_DICT[idx] = flist[idx]
+        print(idx+" "+flist[idx])
 
 def command_choice(flist:list):
     print("Do you want conversion commands? (Y/N)")
