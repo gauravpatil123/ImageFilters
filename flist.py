@@ -30,6 +30,7 @@ def command_choice(flist:list):
         print("END")
 
 def main(flist=FEATURE_LIST):
+    create_fdict()
     print("Filters for Image conversion:")
     for filter in flist:
         print(filter)
@@ -37,5 +38,4 @@ def main(flist=FEATURE_LIST):
 
 
 if __name__ == "__main__":
-    #main()
-    create_fdict()
+    main()
