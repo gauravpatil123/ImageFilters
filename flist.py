@@ -1,6 +1,7 @@
 """
 Feature List for Image conversion arguments
 """
+import os
 
 FEATURE_LIST = ["grayScale", "Purple", "Saffron", "Color", 
                 "Side_Mirror", "Top_Mirror", "Contrast", "Indian_Flag", 
