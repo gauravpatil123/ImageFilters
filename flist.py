@@ -36,4 +36,5 @@ def main(flist=FEATURE_LIST):
 
 
 if __name__ == "__main__":
-    main()
+    #main()
+    create_fdict()
