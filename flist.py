@@ -16,7 +16,7 @@ def create_fdict(flist=FEATURE_LIST):
     for idx in range(len(flist)):
         id = idx + 1
         FEATURE_DICT[id] = flist[idx]
-        print(str(id)+" "+flist[idx])
+        #print(str(id)+" "+flist[idx]) #DONOT UNCOMMENT THIS IS ONLY FOR TESTING
 
 def command_choice(flist:list):
     print("Do you want conversion commands? (Y/N)")
