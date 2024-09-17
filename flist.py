@@ -34,7 +34,7 @@ def command_choice(flist:list):
         print("Chosen filter is "+choice+"/nDo you want to proceed? (Y/N)")
         proceed = str(input())
         if proceed == "Y":
-            pass
+            os.system(conv_command)
         elif proceed == "N":
             print("END")
     elif inp == "N":
