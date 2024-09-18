@@ -21,6 +21,7 @@ public class lstest {
             .append(String.join("", Collections.nCopies(percent, "=")))
             .append('>')
             .append(String.join("", Collections.nCopies(100 - percent, " ")))
+            // .append(String.join("", Collections.nCopies(50 - (percent/2), " ")))
             .append(']')
             .append(String.join("", Collections.nCopies((int) (Math.log10(total)) - (int) (Math.log10(current)), " ")))
             .append(String.format(" %d/%d, ETA: %s", current, total, etaHms));
