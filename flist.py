@@ -9,7 +9,6 @@ FEATURE_LIST = ["grayScale", "Purple", "Saffron", "Color",
 
 FEATURE_DICT = {}
 
-#TODO: add feature to execute java commands directly to the terminal
 #TODO: add loading screen feature for image conversion ===? in progress on ls
 
 def create_fdict(flist=FEATURE_LIST):
