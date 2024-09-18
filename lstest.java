@@ -29,7 +29,7 @@ public class lstest {
     }
 
     public static void main(String[] args) {
-        long total = 235;
+        long total = 100;
         long startTime = System.currentTimeMillis();
     
         for (int i = 1; i <= total; i = i + 3) {
