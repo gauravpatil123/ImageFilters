@@ -102,7 +102,6 @@ public class ImageStyle {
         for(Pixel pixel : GreyImage.pixels()) {
             int px = pixel.getX();
             int py = pixel.getY();
-            // pbar(Height, py);
             sbar(Height, py + 1);
             pixel = ISL.greyPix(pixel, px, py, 0, 0);
         }
@@ -115,7 +114,7 @@ public class ImageStyle {
         for(Pixel pixel : ContrastImage.pixels()) {
             int px = pixel.getX();
             int py = pixel.getY();
-            pbar(Height, py);
+            sbar(Height, py + 1);
             pixel = ISL.contrastPix(pixel, px, py, 0, 0);
         }
         return ContrastImage;
