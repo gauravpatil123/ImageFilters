@@ -138,7 +138,7 @@ public class ImageStyle {
         for(Pixel pixel : SImage.pixels()) {
             int px = pixel.getX();
             int py = pixel.getY();
-            pbar(Height, py);
+            sbar(Height, py + 1);
             pixel = ISL.SaffronPix(pixel, px, py, 0, 0);
         }
         return SImage;
