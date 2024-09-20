@@ -186,7 +186,7 @@ public class ImageStyle {
         for(Pixel pixel : IFI.pixels()) {
             int px = pixel.getX();
             int py = pixel.getY();
-            pbar(Height, py);
+            sbar(Height, py + 1);
             if(py <= (Height/3) ) {
                 pixel = ISL.SaffronPix(pixel, px, py, 0, 0);
             }
