@@ -102,7 +102,8 @@ public class ImageStyle {
         for(Pixel pixel : GreyImage.pixels()) {
             int px = pixel.getX();
             int py = pixel.getY();
-            pbar(Height, py);
+            // pbar(Height, py);
+            sbar(Height, py);
             pixel = ISL.greyPix(pixel, px, py, 0, 0);
         }
         return GreyImage;
