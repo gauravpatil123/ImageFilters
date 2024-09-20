@@ -90,7 +90,7 @@ public class ImageStyle {
             .append('>')
             .append(String.join("", Collections.nCopies(100 - percent, " ")))
             .append(']')
-            .append(String.join("", Collections.nCopies((int) (Math.log10(total)) - (int) (Math.log10(current)), " ")))
+            // .append(String.join("", Collections.nCopies((int) (Math.log10(total)) - (int) (Math.log10(current)), " ")))
             .append(String.format(" %d/%d, ETA: %s", current, total, etaHms));
     
         System.out.print(string);
