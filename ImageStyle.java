@@ -65,13 +65,13 @@ public class ImageStyle {
     }
 
     public void sbar(int Height, int py) {
-        long startTime = System.currentTimeMillis();
-        long total = (long) Height;
-        long current = (long) py;
-        printProgress(startTime, total, current);
+        int startTime = (int) System.currentTimeMillis();
+        // long total = (long) Height;
+        // long current = (long) py;
+        printProgress(startTime, Height, py);
     }
 
-    private static void printProgress(long startTime, long total, long current) {
+    private static void printProgress(int startTime, int total, int current) {
         long eta = current == 0 ? 0 : 
             (total - current) * (System.currentTimeMillis() - startTime) / current;
     
