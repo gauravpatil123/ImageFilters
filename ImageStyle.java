@@ -162,7 +162,7 @@ public class ImageStyle {
         for(Pixel pixel : SMI.pixels()) {
             int px = pixel.getX();
             int py = pixel.getY();
-            pbar(Height, py);
+            sbar(Height, py + 1);
             pixel = ISL.MirrorPix(pixel, px, py, (2*px) - Width + 1, 0);
         }
         return SMI;
@@ -174,7 +174,7 @@ public class ImageStyle {
         for(Pixel pixel : TMI.pixels()) {
             int px = pixel.getX();
             int py = pixel.getY();
-            pbar(Height, py);
+            sbar(Height, py + 1);
             pixel = ISL.MirrorPix(pixel, px, py, 0, (2*py) - Height + 1);
         }
         return TMI;
