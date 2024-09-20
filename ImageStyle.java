@@ -206,7 +206,7 @@ public class ImageStyle {
         for (Pixel pixel : RDP.pixels()) {
             int px = pixel.getX();
             int py = pixel.getY();
-            pbar(Height, py);
+            sbar(Height, py + 1);
             pixel = ISL.RandomPix(pixel, px, py, 0, 0);
         }
         return RDP;
@@ -218,7 +218,7 @@ public class ImageStyle {
         for (Pixel pixel : RDP2.pixels()) {
             int px = pixel.getX();
             int py = pixel.getY();
-            pbar(Height, py);
+            sbar(Height, py + 1);
             pixel = ISL.RandomPix(pixel, px, py, 0, 0);
         }
         return RDP2;
