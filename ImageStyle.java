@@ -230,7 +230,7 @@ public class ImageStyle {
         for (Pixel pixel : SPX.pixels()) {
             int px = pixel.getX();
             int py = pixel.getY();
-            pbar(Height, py);
+            sbar(Height, py + 1);
             pixel = ISL.SwitchPix(pixel, px, py, 0, 0);
         }
         return SPX;
@@ -242,7 +242,7 @@ public class ImageStyle {
         for (Pixel pixel : SPRX.pixels()) {
             int px = pixel.getX();
             int py = pixel.getY();
-            pbar(Height, py);
+            sbar(Height, py + 1);
             pixel = ISL.SwitchRandPix(pixel, px, py, 0, 0);
         }
         return SPRX;
