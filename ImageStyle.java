@@ -66,12 +66,12 @@ public class ImageStyle {
 
     public void sbar(int Height, int py) {
         int startTime = (int) System.currentTimeMillis();
-        // long total = (long) Height;
-        // long current = (long) py;
-        printProgress(startTime, Height, py);
+        long total = (long) Height;
+        long current = (long) py;
+        printProgress(startTime, total, current);
     }
 
-    private static void printProgress(int startTime, int total, int current) {
+    private static void printProgress(long startTime, long total, long current) {
         long eta = current == 0 ? 0 : 
             (total - current) * (System.currentTimeMillis() - startTime) / current;
     
@@ -103,7 +103,7 @@ public class ImageStyle {
             int px = pixel.getX();
             int py = pixel.getY();
             // pbar(Height, py);
-            sbar(Height, py);
+            sbar(Height, py + 1);
             pixel = ISL.greyPix(pixel, px, py, 0, 0);
         }
         return GreyImage;
