@@ -150,7 +150,7 @@ public class ImageStyle {
         for(Pixel pixel : CImage.pixels()) {
             int px = pixel.getX();
             int py = pixel.getY();
-            pbar(Height, py);
+            sbar(Height, py + 1);
             pixel = ISL.ColorPix(pixel, px, py, 0, 0, R, G, B);
         }
         return CImage;
