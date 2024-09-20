@@ -126,7 +126,7 @@ public class ImageStyle {
         for(Pixel pixel : PImage.pixels()) {
             int px = pixel.getX();
             int py = pixel.getY();
-            pbar(Height, py);
+            sbar(Height, py + 1);
             pixel = ISL.PurplePix(pixel, px, py, 0, 0);
         }
         return PImage;
