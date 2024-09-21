@@ -29,7 +29,10 @@ public class ImageStyle {
         //log(String.valueOf(percent));
         return (int)percent;
     }
-
+/* 
+Remove pbar code and utility fxns before making more filters
+Incorporate 4style into this module
+*/
     public String loader(int percent) {
         String out = "|> |  |  |  |  |  |  |  |  |  |";
         if(percent < 10) {
