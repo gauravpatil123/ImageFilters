@@ -22,50 +22,10 @@ public class ImageStyle {
         System.out.println(inp);
     }
 
-    // public int calculateProgress(int Height, int py) {
-
-    //     float percent = (float)py/(float)Height;
-    //     percent = percent * 100;
-    //     //log(String.valueOf(percent));
-    //     return (int)percent;
-    // }
 /* 
 Remove pbar code and utility fxns before making more filters
 Incorporate 4style into this module
 */
-    // public String loader(int percent) {
-    //     String out = "|> |  |  |  |  |  |  |  |  |  |";
-    //     if(percent < 10) {
-    //         out =  "|> |  |  |  |  |  |  |  |  |  |";
-    //     } else if(percent < 20) {
-    //         out = "|==|> |  |  |  |  |  |  |  |  |";
-    //     } else if(percent < 30) {
-    //         out = "|==|==|> |  |  |  |  |  |  |  |";
-    //     } else if(percent < 40) {
-    //         out = "|==|==|==|> |  |  |  |  |  |  |";
-    //     } else if (percent < 50) {
-    //         out = "|==|==|==|==|> |  |  |  |  |  |";   
-    //     } else if(percent < 60) {
-    //         out = "|==|==|==|==|==|> |  |  |  |  |";
-    //     } else if (percent < 70) {
-    //         out = "|==|==|==|==|==|==|> |  |  |  |";
-    //     } else if (percent < 80) {
-    //         out = "|==|==|==|==|==|==|==|> |  |  |";
-    //     } else if (percent < 90) {
-    //         out = "|==|==|==|==|==|==|==|==|> |  |";
-    //     } else if (percent < 100) {
-    //         out = "|==|==|==|==|==|==|==|==|==|> |";
-    //     } else if (percent == 100) {
-    //         out = "|==|==|==|==|==|==|==|==|==|==|";
-    //     }
-    //     return out;
-    // }
-
-    // public void pbar(int Height, int py) {
-    //     int progress = calculateProgress(Height, py);
-    //     String pbar = loader(progress);
-    //     log(pbar);
-    // }
 
     public void sbar(int Height, int py) {
         int startTime = (int) System.currentTimeMillis();
