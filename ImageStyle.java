@@ -23,7 +23,6 @@ public class ImageStyle {
     }
 
 /* 
-Remove pbar code and utility fxns before making more filters
 Incorporate 4style into this module
 */
 
