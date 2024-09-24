@@ -222,9 +222,11 @@ public class ImageStyle {
                 pixel.setGreen(inPixel.getGreen());
                 pixel.setBlue(inPixel.getBlue());
             }
-
             if (px >= Width && px < newWidth && py < Height) {
                 pixel = ISL.greyPix(pixel, px, py, 0, 0);
+            }
+            if (px >= Width && px < newWidth && py >= Height && py < newHeight) {
+                pixel = ISL.contrastPix(pixel, px, py, 0, 0);
             }
 
         }
