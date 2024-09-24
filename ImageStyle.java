@@ -228,6 +228,9 @@ public class ImageStyle {
             if (px >= Width && px < newWidth && py >= Height && py < newHeight) {
                 pixel = ISL.contrastPix(pixel, px, py, 0, 0);
             }
+            if(px < Width && py >= Height && py < newHeight) {
+                pixel = ISL.MirrorPix(pixel, px, py, 0, 0);
+            }
 
         }
 
