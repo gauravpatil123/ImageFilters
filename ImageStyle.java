@@ -346,7 +346,12 @@ public class ImageStyle {
         }
 
         if(Filter.equals("4Styles")) {
-            continue;
+            ImageResource FSIF = FourStyles();
+            FSIF.draw();
+            String ImageName = Image.getFileName();
+            String FSIN = "FSI_"+ImageName;
+            FSIF.setFileName(FSIN);
+            FSIF.save();
         }
 
     }
