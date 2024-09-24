@@ -211,6 +211,16 @@ public class ImageStyle {
         int newHeight = 2*Height;
         ImageResource FSI = new ImageResource(newWidth, newHeight);
         for(Pixel pixel : FSI.pixels()) {
+            int px = pixel.getX();
+            int py = pixel.getY();
+            sbar(newHeight, py + 1);
+
+            if (px < Width && py < Height) {
+                Pixel inPixel = Image.getPixel(px, py);
+                pixel.setRed(inPixel.getRed());
+                pixel.setGreen(inPixel.getGreen());
+                pixel.setBlue(inPixel.getBlue());
+            }
 
         }
 
