@@ -231,9 +231,7 @@ public class ImageStyle {
             if(px < Width && py >= Height && py < newHeight) {
                 pixel = ISL.MirrorPix(pixel, px, py, 0, 0);
             }
-
         }
-
         return FSI;
     }
 
@@ -345,6 +343,10 @@ public class ImageStyle {
             String SRI = "SPRX_"+ImageName;
             SPRX.setFileName(SRI);
             SPRX.save();
+        }
+
+        if(Filter.equals("4Styles")) {
+            continue;
         }
 
     }
