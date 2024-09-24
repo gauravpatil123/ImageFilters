@@ -206,6 +206,17 @@ public class ImageStyle {
         return SPRX;
     }
 
+    public ImageResource FourStyles() {
+        int newWidth = 2*Width;
+        int newHeight = 2*Height;
+        ImageResource FSI = new ImageResource(newWidth, newHeight);
+        for(Pixel pixel : FSI.pixels()) {
+
+        }
+
+        return FSI;
+    }
+
     public void convert(String Filter) {
 
         if(Filter.equals("grayScale")) {
