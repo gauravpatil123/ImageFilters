@@ -5,7 +5,7 @@ import os
 
 FEATURE_LIST = ["grayScale", "Purple", "Saffron", "Color", 
                 "Side_Mirror", "Top_Mirror", "Contrast", "Indian_Flag", 
-                "RandomPix", "RandomPix2", "SwitchPix", "SwitchRandPix"]
+                "RandomPix", "RandomPix2", "SwitchPix", "SwitchRandPix", "4Styles"]
 
 FEATURE_DICT = {}
 
