@@ -22,10 +22,6 @@ public class ImageStyle {
         System.out.println(inp);
     }
 
-/* 
-Incorporate 4style into this module
-*/
-
     public void sbar(int Height, int py) {
         int startTime = (int) System.currentTimeMillis();
         long total = (long) Height;
