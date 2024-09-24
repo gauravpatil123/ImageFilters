@@ -210,6 +210,7 @@ public class ImageStyle {
         int newWidth = 2*Width;
         int newHeight = 2*Height;
         ImageResource FSI = new ImageResource(newWidth, newHeight);
+        ImgStyleLib ISL = new ImgStyleLib(Image);
         for(Pixel pixel : FSI.pixels()) {
             int px = pixel.getX();
             int py = pixel.getY();
@@ -220,6 +221,10 @@ public class ImageStyle {
                 pixel.setRed(inPixel.getRed());
                 pixel.setGreen(inPixel.getGreen());
                 pixel.setBlue(inPixel.getBlue());
+            }
+
+            if (px >= Width && px < newWidth && py < Height) {
+                pixel = ISL.greyPix(pixel, px, py, 0, 0);
             }
 
         }
