@@ -223,13 +223,18 @@ public class ImageStyle {
                 pixel.setBlue(inPixel.getBlue());
             }
             if (px >= Width && px < newWidth && py < Height) {
-                pixel = ISL.greyPix(pixel, px, py, 0, 0);
+                int Px = px - Width;
+                pixel = ISL.greyPix(pixel, Px, py, 0, 0);
             }
             if (px >= Width && px < newWidth && py >= Height && py < newHeight) {
-                pixel = ISL.contrastPix(pixel, px, py, 0, 0);
+                int Px = px - Width;
+                int Py = py - Height;
+                pixel = ISL.contrastPix(pixel, Px, Py, 0, 0);
             }
             if(px < Width && py >= Height && py < newHeight) {
-                pixel = ISL.MirrorPix(pixel, px, py, 0, 0);
+                int Px = (Width - 1) - px;
+                int Py = py - Height;
+                pixel = ISL.MirrorPix(pixel, Px, Py, 0, 0);
             }
         }
         return FSI;
