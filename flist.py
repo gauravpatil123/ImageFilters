@@ -9,7 +9,7 @@ FEATURE_LIST = ["grayScale", "Purple", "Saffron", "Color",
 
 FEATURE_DICT = {}
 
-#TODO: add loading screen feature for image conversion ===? in progress on ls
+#TODO: 
 
 def create_fdict(flist=FEATURE_LIST):
     global FEATURE_DICT
