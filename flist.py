@@ -22,7 +22,6 @@ def command_choice(flist:list):
     global FEATURE_DICT
     counter = 1
     for filter in flist:
-        # print(str(counter)+") java ImageStyle "+filter)
         print(str(counter)+") "+filter)
         counter += 1
     choice = input("Input filter choice number for image conversion.\n")
