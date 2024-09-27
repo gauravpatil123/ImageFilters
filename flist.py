@@ -10,7 +10,6 @@ FEATURE_LIST = ["grayScale", "Purple", "Saffron", "Color",
 FEATURE_DICT = {}
 
 #TODO: use randomiser or filter choice for 4style filter
-#TODO: change TUI for executing conversions
 
 def create_fdict(flist=FEATURE_LIST):
     global FEATURE_DICT
