@@ -38,8 +38,6 @@ def command_choice(flist:list):
 def main(flist=FEATURE_LIST):
     create_fdict()
     print("Filters for Image conversion:")
-    # for filter in flist:
-    #     print(filter)
     command_choice(flist)
 
 
