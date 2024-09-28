@@ -246,9 +246,11 @@ public class ImageStyle {
         ImageResource RFSI = new ImageResource(newWidth, newHeight);
         ImgStyleLib ISL = new ImgStyleLib(Image);
         for(Pixel pixel : RFSI.pixels()) {
-            continue;
+            int px = pixel.getX();
+            int py = pixel.getY();
+            sbar(newHeight, py + 1);
         }
-        
+
         return RFSI;
     }
 
