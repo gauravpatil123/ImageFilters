@@ -240,6 +240,18 @@ public class ImageStyle {
         return FSI;
     }
 
+    public ImageResource RdFourStyles() {
+        int newWidth = 2*Width;
+        int newHeight = 2*Height;
+        ImageResource RFSI = new ImageResource(newWidth, newHeight);
+        ImgStyleLib ISL = new ImgStyleLib(Image);
+        for(Pixel pixel : RFSI.pixels()) {
+            continue;
+        }
+        
+        return RFSI;
+    }
+
     public void convert(String Filter) {
 
         if(Filter.equals("grayScale")) {
