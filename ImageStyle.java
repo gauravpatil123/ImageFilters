@@ -254,15 +254,18 @@ public class ImageStyle {
                 continue;
             }
             if (px >= Width && px < newWidth && py < Height) {
+                int Px = px - Width;
                 continue;
             }
             if (px >= Width && px < newWidth && py >= Height && py < newHeight) {
+                int Px = px - Width;
+                int Py = py - Height;
                 continue;
-
             }
             if(px < Width && py >= Height && py < newHeight) {
+                int Px = (Width - 1) - px;
+                int Py = py - Height;
                 continue;
-
             }
         }
 
