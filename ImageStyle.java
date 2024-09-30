@@ -250,6 +250,20 @@ public class ImageStyle {
             int py = pixel.getY();
             sbar(newHeight, py + 1);
             //TODO: think about how to randomize fxn
+            if (px < Width && py < Height) {
+                continue;
+            }
+            if (px >= Width && px < newWidth && py < Height) {
+                continue;
+            }
+            if (px >= Width && px < newWidth && py >= Height && py < newHeight) {
+                continue;
+
+            }
+            if(px < Width && py >= Height && py < newHeight) {
+                continue;
+
+            }
         }
 
         return RFSI;
