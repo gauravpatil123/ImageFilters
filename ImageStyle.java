@@ -3,6 +3,8 @@ import org.apache.commons.csv.*;
 import java.io.*;
 import java.util.concurrent.TimeUnit;
 import java.util.Collections;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ImageStyle {
 
@@ -238,6 +240,11 @@ public class ImageStyle {
             }
         }
         return FSI;
+    }
+
+    public List<Integer> rdfxnList() {
+        List<Integer> list = new ArrayList<>();
+        return list;
     }
 
     public ImageResource RdFourStyles() {
