@@ -259,15 +259,19 @@ public class ImageStyle {
             pixel.setRed(inPixel.getRed());
             pixel.setGreen(inPixel.getGreen());
             pixel.setBlue(inPixel.getBlue());
+            return pixel;
         }
         if(fxnno == 1) {
             pixel = ISL.greyPix(pixel, px, py, 0, 0);
+            return pixel;
         }
         if(fxnno == 2) {
             pixel = ISL.contrastPix(pixel, px, py, 0, 0);
+            return pixel;
         }
         if(fxnno == 3) {
             pixel = ISL.MirrorPix(pixel, px, py, 0, 0);
+            return pixel;
         }
         return pixel;
     }
