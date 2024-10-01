@@ -277,6 +277,11 @@ public class ImageStyle {
         int newHeight = 2*Height;
         ImageResource RFSI = new ImageResource(newWidth, newHeight);
         ImgStyleLib ISL = new ImgStyleLib(Image);
+        List<Integer> fxnNoList = rdfxnList();
+        int f1 = fxnNoList.get(0);
+        int f2 = fxnNoList.get(1);
+        int f3 = fxnNoList.get(2);
+        int f4 = fxnNoList.get(3);
         for(Pixel pixel : RFSI.pixels()) {
             int px = pixel.getX();
             int py = pixel.getY();
