@@ -252,6 +252,10 @@ public class ImageStyle {
         return list;
     }
 
+    public Pixel filteredPix(int fxnno, Pixel pixel, int px, int py, int cx, int cy) {
+        return pixel;
+    }
+
     public ImageResource RdFourStyles() {
         int newWidth = 2*Width;
         int newHeight = 2*Height;
