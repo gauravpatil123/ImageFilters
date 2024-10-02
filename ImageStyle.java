@@ -252,28 +252,23 @@ public class ImageStyle {
         return list;
     }
 
-    public Pixel filteredPixel(int fxnno, ImgStyleLib ISL, Pixel pixel, int px, int py, int cx, int cy) {
+    public void filteredPixel(int fxnno, ImgStyleLib ISL, Pixel pixel, int px, int py, int cx, int cy) {
 
         if(fxnno == 0) {
             Pixel inPixel = Image.getPixel(px, py);
             pixel.setRed(inPixel.getRed());
             pixel.setGreen(inPixel.getGreen());
             pixel.setBlue(inPixel.getBlue());
-            return pixel;
         }
         if(fxnno == 1) {
             pixel = ISL.greyPix(pixel, px, py, 0, 0);
-            return pixel;
         }
         if(fxnno == 2) {
             pixel = ISL.contrastPix(pixel, px, py, 0, 0);
-            return pixel;
         }
         if(fxnno == 3) {
             pixel = ISL.MirrorPix(pixel, px, py, 0, 0);
-            return pixel;
         }
-        return pixel;
     }
 
     public ImageResource RdFourStyles() {
