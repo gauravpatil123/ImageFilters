@@ -296,7 +296,7 @@ public class ImageStyle {
             if (px >= Width && px < newWidth && py >= Height && py < newHeight) {
                 int Px = px - Width;
                 int Py = py - Height;
-                continue;
+                filteredPixel(f3, ISL, pixel, Px, Py, 0, 0);
             }
             if(px < Width && py >= Height && py < newHeight) {
                 int Px = (Width - 1) - px;
