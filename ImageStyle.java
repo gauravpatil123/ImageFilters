@@ -427,6 +427,15 @@ public class ImageStyle {
             FSIF.save();
         }
 
+        if(Filter.equals("Rd4Styles")) {
+            ImageResource RD4S = RdFourStyles();
+            RD4S.draw();
+            String ImageName = Image.getFileName();
+            String RD4N = "RD4N_"+ImageName;
+            RD4S.setFileName(RD4N);
+            RD4S.save();
+        }
+
     }
 
     public static void main(String[] args) {
