@@ -267,7 +267,7 @@ public class ImageStyle {
             pixel = ISL.contrastPix(pixel, px, py, 0, 0);
         }
         if(fxnno == 3) {
-            int Cx = (px) - Width + 1;
+            int Cx = (2*px) - Width + 1;
             pixel = ISL.MirrorPix(pixel, px, py, Cx, 0);
         }
     }
