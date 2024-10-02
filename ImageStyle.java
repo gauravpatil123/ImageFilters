@@ -267,7 +267,7 @@ public class ImageStyle {
             pixel = ISL.contrastPix(pixel, px, py, 0, 0);
         }
         if(fxnno == 3) {
-            int Cx = (2*px) - Width + 1;
+            int Cx = (px) - Width + 1;
             pixel = ISL.MirrorPix(pixel, px, py, Cx, 0);
         }
     }
@@ -300,9 +300,8 @@ public class ImageStyle {
                 filteredPixel(f3, ISL, pixel, Px, Py, 0, 0);
             }
             if(px < Width && py >= Height && py < newHeight) {
-                int Px = px - Width - 1;
                 int Py = py - Height;
-                filteredPixel(f4, ISL, pixel, Px, Py, 0, 0);
+                filteredPixel(f4, ISL, pixel, px, Py, 0, 0);
             }
         }
 
