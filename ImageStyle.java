@@ -300,7 +300,7 @@ public class ImageStyle {
                 filteredPixel(f3, ISL, pixel, Px, Py, 0, 0);
             }
             if(px < Width && py >= Height && py < newHeight) {
-                int Px = px - Width;
+                int Px = px - Width - 1;
                 int Py = py - Height;
                 filteredPixel(f4, ISL, pixel, Px, Py, 0, 0);
             }
