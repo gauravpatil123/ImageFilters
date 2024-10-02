@@ -287,11 +287,11 @@ public class ImageStyle {
             sbar(newHeight, py + 1);
             //TODO: think about how to randomize fxn
             if (px < Width && py < Height) {
-                pixel = filteredPixel(f1, ISL, pixel, px, py, 0, 0);
+                filteredPixel(f1, ISL, pixel, px, py, 0, 0);
             }
             if (px >= Width && px < newWidth && py < Height) {
                 int Px = px - Width;
-                pixel = filteredPixel(f2, ISL, pixel, Px, py, 0, 0);
+                filteredPixel(f2, ISL, pixel, Px, py, 0, 0);
             }
             if (px >= Width && px < newWidth && py >= Height && py < newHeight) {
                 int Px = px - Width;
