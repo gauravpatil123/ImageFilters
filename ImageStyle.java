@@ -286,7 +286,6 @@ public class ImageStyle {
             int px = pixel.getX();
             int py = pixel.getY();
             sbar(newHeight, py + 1);
-            //TODO: think about how to randomize fxn
             if (px < Width && py < Height) {
                 filteredPixel(f1, ISL, pixel, px, py, 0, 0);
             }
