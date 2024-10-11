@@ -24,6 +24,37 @@ public class HideImage {
 
     }
 
+    private ImageResource steganography() { //front image low quality deteriorate
+
+        for(Pixel pixel : HiddenImage.pixels()) {
+            int px = pixel.getX();
+            int py = pixel.getY();
+            Pixel FPixel = frontImage.getPixel(px, py);
+            int Fred = FPixel.getRed();
+            int Fgreen = FPixel.getGreen();
+            int Fblue = FPixel.getBlue();
+            Pixel HPixel = backImage.getPixel(px, py);
+            int Bred = HPixel.getRed();
+            int Bgreen = HPixel.getGreen();
+            int Bblue = HPixel.getBlue();
+            int red = hideColor(Fred, Bred);
+            int green = hideColor(Fgreen, Bgreen);
+            int blue = hideColor(Fblue, Bblue);
+            pixel.setRed(red);
+            pixel.setGreen(green);
+            pixel.setBlue(blue);
+        }
+        return HiddenImage;
+
+    }
+
+    private int hideColor (int FrontColor, int BackColor) {
+
+        int newColor = (int) ((Math.floor(FrontColor/16)*16) + Math.floor(BackColor/16));
+        return newColor;
+
+    }
+
     public static void main(String[] args) {
 
     }
