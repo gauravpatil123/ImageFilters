@@ -55,6 +55,18 @@ public class HideImage {
 
     }
 
+    public void hideImage() {
+
+        ImageResource HI = steganography();
+        HI.draw();
+        String FImageName = frontImage.getFileName();
+        String BImageName = backImage.getFileName();
+        String HImage = "Hidden-" + FImageName + "-" + BImageName;
+        HI.setFileName(HImage);
+        HI.save();
+
+    }
+
     public static void main(String[] args) {
 
     }
