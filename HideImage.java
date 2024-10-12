@@ -69,6 +69,12 @@ public class HideImage {
 
     public static void main(String[] args) {
 
+        ImageResource fi = new ImageResource();
+        ImageResource bi = new ImageResource();
+
+        HideImage hi = new HideImage(fi, bi);
+        hi.hideImage();
+
     }
 
 }
