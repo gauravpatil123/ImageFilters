@@ -68,6 +68,8 @@ public class HideImage {
 
     }
 
+    //TODO: add function to decrypt image
+
     public static void main(String[] args) {
 
         ImageResource fi = new ImageResource();
