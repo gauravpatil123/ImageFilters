@@ -50,6 +50,7 @@ public class HideImage {
 
     private int hideColor (int FrontColor, int BackColor) {
         //TODO: Add documentation
+        //NOTE: check the binary math
 
         int newColor = (int) ((Math.floor(FrontColor/16)*16) + Math.floor(BackColor/16));
         return newColor;
