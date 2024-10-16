@@ -71,7 +71,7 @@ public class HideImage {
     }
 
     //TODO: add function to decrypt image
-    //NOTE: write math for decryption
+    //NOTE: write binary math for decryption
 
     public static void main(String[] args) {
 
