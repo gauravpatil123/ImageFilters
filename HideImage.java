@@ -72,15 +72,20 @@ public class HideImage {
 
     //TODO: add function to decrypt image
     //NOTE: write binary math for decryption
-    //TODO: ise args in main fxn to determine encryption or decryption
+    //TODO: use args in main fxn to determine encryption or decryption
 
     public static void main(String[] args) {
 
-        ImageResource fi = new ImageResource();
-        ImageResource bi = new ImageResource();
+        String arg = args[0];
 
-        HideImage hi = new HideImage(fi, bi);
-        hi.hideImage();
+        if (arg.equals("hide")) {
+
+            ImageResource fi = new ImageResource();
+            ImageResource bi = new ImageResource();
+            HideImage hi = new HideImage(fi, bi);
+            hi.hideImage();
+
+        }
 
     }
 
