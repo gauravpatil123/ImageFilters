@@ -75,7 +75,8 @@ public class HideImage {
     //TODO: use args in main fxn to determine encryption or decryption
 
     private int unhideColor (int PixColor) {
-        
+        int newColor = (int) (PixColor % 16);
+        return newColor;
     }
 
     public static void main(String[] args) {
