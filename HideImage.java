@@ -74,6 +74,10 @@ public class HideImage {
     //NOTE: write binary math for decryption
     //TODO: use args in main fxn to determine encryption or decryption
 
+    private int unhideColor (int PixColor) {
+        
+    }
+
     public static void main(String[] args) {
 
         String arg = args[0];
