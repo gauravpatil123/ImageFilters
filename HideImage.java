@@ -53,7 +53,7 @@ public class HideImage {
         //NOTE: check the binary math
         //NOTE: try to add a image distortion knob to the hide image fxn
 
-        int newColor = (int) ((Math.floor(FrontColor/16)*16) + Math.floor(BackColor/16));
+        int newColor = (int) ((Math.floor(FrontColor/10)*10) + Math.floor(BackColor/100));
         return newColor;
 
     }
