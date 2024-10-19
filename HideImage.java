@@ -75,6 +75,9 @@ public class HideImage {
 
     private int unhideColor (int PixColor) {
         int newColor = (int) (PixColor % 10);
+        String nc = Integer.toString(newColor);
+        nc = nc + "00";
+        newColor = Integer.parseInt(nc);
         return newColor;
     }
 
