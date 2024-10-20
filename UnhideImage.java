@@ -48,4 +48,14 @@ public class UnhideImage {
         newColor = Integer.parseInt(nc);
         return newColor;
     }
+
+    public void extractImage() {
+        ImageResource HI = UnhideImage();
+        HI.draw();
+        String MImageName = MixedImage.getFileName();
+        String HImageName = "Hidden-" + MImageName;
+        HI.setFileName(HImageName);
+        HI.save();
+    }
+
 }
