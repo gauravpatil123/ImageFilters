@@ -19,6 +19,27 @@ public class UnhideImage {
     //TODO: add function to decrypt image
     //TODO: use args in main fxn to determine encryption or decryption
 
+    private ImageResource ExtractImage() {
+
+        for(Pixel pixel : HiddenImage.pixels()) {
+            int px = pixel.getX();
+            int py = pixel.getY();
+            Pixel MPixel = MixedImage.getPixel(px, py);
+            int Mred = MPixel.getRed();
+            int Mgreen = MPixel.getGreen();
+            int Mblue = MPixel.getBlue();
+            int Hred = unhideColor(Mred);
+            int Hgreen = unhideColor(Mgreen);
+            int Hblue = unhideColor(Mblue);
+            pixel.setRed(Hred);
+            pixel.setGreen(Hgreen);
+            pixel.setBlue(Hblue);
+        }
+
+        return HiddenImage;
+
+    }
+
     private int unhideColor (int PixColor) {
         //TODO: documenting math and test
         int newColor = (int) (PixColor % 10);
