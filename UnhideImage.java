@@ -58,4 +58,8 @@ public class UnhideImage {
         HI.save();
     }
 
+    public static void main(String[] args) {
+        
+    }
+
 }
