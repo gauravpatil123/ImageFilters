@@ -59,7 +59,7 @@ public class UnhideImage {
     }
 
     public static void main(String[] args) {
-        
+        String arg = args[0];
     }
 
 }
