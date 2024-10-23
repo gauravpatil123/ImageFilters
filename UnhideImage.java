@@ -60,6 +60,10 @@ public class UnhideImage {
 
     public static void main(String[] args) {
         String arg = args[0];
+
+        if (arg.equals("unhide")) {
+            ImageResource MI = new ImageResource();
+        }
     }
 
 }
