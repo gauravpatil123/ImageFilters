@@ -64,6 +64,7 @@ public class UnhideImage {
         if (arg.equals("unhide")) {
             ImageResource MI = new ImageResource();
             UnhideImage UI = new UnhideImage(MI);
+            UI.extractImage();
         }
     }
 
