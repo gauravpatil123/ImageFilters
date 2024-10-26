@@ -16,7 +16,6 @@ public class UnhideImage {
 
     }
 
-    //TODO: add function to decrypt image
     //TODO: use args in main fxn to determine encryption or decryption
 
     private ImageResource UnhideImage() {
