@@ -16,8 +16,6 @@ public class UnhideImage {
 
     }
 
-    //TODO: use args in main fxn to determine encryption or decryption
-
     private ImageResource UnhideImage() {
 
         for(Pixel pixel : HiddenImage.pixels()) {
