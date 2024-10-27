@@ -16,7 +16,7 @@ public class UnhideImage {
 
     }
 
-    private ImageResource UnhideImage() {
+    private ImageResource Unhide() {
 
         for(Pixel pixel : HiddenImage.pixels()) {
             int px = pixel.getX();
@@ -47,7 +47,7 @@ public class UnhideImage {
     }
 
     public void extractImage() {
-        ImageResource HI = UnhideImage();
+        ImageResource HI = Unhide();
         HI.draw();
         String MImageName = MixedImage.getFileName();
         String HImageName = "Hidden-" + MImageName;
