@@ -50,7 +50,7 @@ public class UnhideImage {
         ImageResource HI = Unhide();
         HI.draw();
         String MImageName = MixedImage.getFileName();
-        String HImageName = "Hidden-" + MImageName;
+        String HImageName = "UnHidden-" + MImageName;
         HI.setFileName(HImageName);
         HI.save();
     }
