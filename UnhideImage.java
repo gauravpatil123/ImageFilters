@@ -39,6 +39,7 @@ public class UnhideImage {
 
     private int unhideColor (int PixColor) {
         //TODO: documenting math and test
+        //TODO: Fix unhide math
         int newColor = (int) (PixColor % 10);
         String nc = Integer.toString(newColor);
         nc = nc + "00";
