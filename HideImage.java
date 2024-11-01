@@ -50,7 +50,6 @@ public class HideImage {
     private int hideColor (int FrontColor, int BackColor) {
         //TODO: Add documentation
         //NOTE: try to add a image distortion knob to the hide image fxn
-        //TODO: check hide image math
         //TODO: make algorithm to handle 2 & 1 digit pixel values
 
         int newColor = (int) ((Math.floor(FrontColor/10)*10) + Math.floor(BackColor/100));
