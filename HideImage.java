@@ -47,6 +47,19 @@ public class HideImage {
 
     }
 
+    private int getBcInt(int BackColor) {
+        
+        if (BackColor < 10) {
+            return 0;
+        } else if (BackColor < 100) {
+            return 0;
+        } else if (BackColor > 99) {
+            int Backint = (int) Math.floor(BackColor/100);
+            return Backint;
+        }
+        return 0;
+    }
+
     private int hideColor (int FrontColor, int BackColor) {
         //TODO: Add documentation
         //NOTE: try to add a image distortion knob to the hide image fxn
