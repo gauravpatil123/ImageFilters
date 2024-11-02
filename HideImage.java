@@ -73,7 +73,7 @@ public class HideImage {
 
         } else {
 
-            newColor = (int) (Math.floor(FrontColor/10)*10) + (int) Math.floor(BackColor/100);
+            newColor = (int) (Math.floor(FrontColor/10)*10) + getBcInt(BackColor);
         
         }
 
