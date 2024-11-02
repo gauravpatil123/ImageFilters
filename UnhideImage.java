@@ -40,10 +40,23 @@ public class UnhideImage {
     private int unhideColor (int PixColor) {
         //TODO: documenting math and test
         //TODO: make algorithm to handle 2 & 1 digit pixel values
-        int newColor = (int) (PixColor % 10);
-        String nc = Integer.toString(newColor);
-        nc = nc + "00";
-        newColor = Integer.parseInt(nc);
+
+        int newColor;
+
+        if (PixColor < 10) {
+
+            newColor = PixColor;
+        
+        } else {
+            
+            newColor = (int) (PixColor % 10);
+            String nc = Integer.toString(newColor);
+            nc = nc + "00";
+            newColor = Integer.parseInt(nc);
+            return newColor;
+        
+        }
+
         return newColor;
     }
 
