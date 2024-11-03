@@ -64,6 +64,7 @@ public class HideImage {
         //TODO: Add documentation
         //NOTE: try to add a image distortion knob to the hide image fxn
         //TODO: make algorithm to handle 2 & 1 digit pixel values
+        //TODO: Try string concatenation method to get the hexadecimal math correct
 
         int newColor;
 
