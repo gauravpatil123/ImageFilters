@@ -40,6 +40,7 @@ public class UnhideImage {
     private int unhideColor (int PixColor) {
         //TODO: documenting math and test
         //TODO: make algorithm to handle 2 & 1 digit pixel values
+        //TODO: Try string concatenation method to get the hexadecimal math correct
 
         int newColor;
 
