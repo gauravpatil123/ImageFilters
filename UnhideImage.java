@@ -42,6 +42,7 @@ public class UnhideImage {
         //TODO: make algorithm to handle 2 & 1 digit pixel values
         //TODO: Try string concatenation method to get the hexadecimal math correct
         //Note: fix the hide image code before trying new solutions here
+        //NOTE: the string concatenation approach is not yet tested
 
         int newColor;
 
