@@ -66,6 +66,7 @@ public class HideImage {
         //TODO: make algorithm to handle 2 & 1 digit pixel values
         //TODO: Try string concatenation method to get the hexadecimal math correct
         //NOTE: can also test the math by assighning parts of the hidden image code and checking
+        //NOTE: check the values of both parts in testing
 
         int newColor;
 
