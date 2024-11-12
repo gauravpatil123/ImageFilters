@@ -8,7 +8,7 @@ public class HideImage {
     private ImageResource HiddenImage;
     private int Fwidth;
     private int Fheight;
-    private int Bwidth;
+    private int Bwidth; //remove if unutilised
     private int Bheight;
 
     public HideImage(ImageResource FImage, ImageResource BImage) {
