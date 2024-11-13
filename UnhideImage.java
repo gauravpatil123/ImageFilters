@@ -1,3 +1,8 @@
+/* 
+ * Add README and include section for work in progress features
+ * 
+*/
+
 import edu.duke.*;
 import java.io.*;
 
