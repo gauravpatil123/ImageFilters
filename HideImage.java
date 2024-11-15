@@ -1,3 +1,6 @@
+/*
+ * Hide class is work in progress + not tested
+ */
 import edu.duke.*;
 import java.io.*;
 
