@@ -1,5 +1,6 @@
 /*
  * Hide class is work in progress + not tested
+ * Hide image algorythm not following hexa decimal math as intended
  */
 import edu.duke.*;
 import java.io.*;
