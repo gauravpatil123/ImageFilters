@@ -1,7 +1,7 @@
 /* 
  * Add README and include section for work in progress features
  *  -> Unhide class is work in progress + not tested
- * 
+ *  -> Hide class is work in progress + not tested
 */
 
 import edu.duke.*;
