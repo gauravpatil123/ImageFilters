@@ -2,6 +2,7 @@
  * Add README and include section for work in progress features
  *  -> Unhide class is work in progress + not tested
  *  -> Hide class is work in progress + not tested
+ *  -> Mention incomplete classes in README
 */
 
 import edu.duke.*;
