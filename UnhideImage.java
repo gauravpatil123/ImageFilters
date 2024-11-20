@@ -3,6 +3,7 @@
  *  -> Unhide class is work in progress + not tested
  *  -> Hide class is work in progress + not tested
  *  -> Mention incomplete classes in README
+ *  -> Mention project status as halted
 */
 
 import edu.duke.*;
