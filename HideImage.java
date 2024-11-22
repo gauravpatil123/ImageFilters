@@ -2,6 +2,7 @@
  * Hide class is work in progress + not tested
  * Hide image algorythm not following hexa decimal math as intended
  * Mention porblem with class in readme
+ * Mention project status in readme
  */
 import edu.duke.*;
 import java.io.*;
