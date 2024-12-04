@@ -6,4 +6,5 @@
 4. Color
 5. Side Mirror
 6. Top Mirror
+7. Contrast
 ## TODO List
