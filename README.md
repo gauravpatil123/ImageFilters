@@ -7,4 +7,5 @@
 5. Side Mirror
 6. Top Mirror
 7. Contrast
+8. Indian Flag
 ## TODO List
