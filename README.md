@@ -10,4 +10,5 @@
 8. Indian Flag
 9. Random Pix
 10. Random Pix 2
+11. Switch Pix
 ## TODO List
