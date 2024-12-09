@@ -39,6 +39,5 @@ def main(flist:list=FEATURE_LIST) -> None:
     print("Filters for Image conversion:")
     command_choice(flist)
 
-
 if __name__ == "__main__":
     main()
