@@ -46,12 +46,6 @@ def command_choice(flist:list) -> None:
     display_filters(counter, flist)
     choice = authenticate_choice(FEATURE_DICT)
     execute_choice(choice)
-    # proceed = choice[0]
-    # if proceed == "Y":
-    #     conv_command = choice[1]
-    #     os.system(conv_command)
-    # elif proceed == "N":
-    #     print("END")
     #TODO: add one more else condition to hande other inputs
 
 def main(flist:list=FEATURE_LIST) -> None:
