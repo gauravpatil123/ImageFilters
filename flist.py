@@ -32,6 +32,14 @@ def authenticate_choice(fdict:dict) -> list:
     proceed = proceed.upper
     return [proceed, conv_command]
 
+def execute_choice(choice:list) -> None:
+    proceed = choice[0]
+    if proceed == "Y":
+        conv_command = choice[1]
+        os.system(conv_command)
+    elif proceed == "N":
+        print("END")
+
 def command_choice(flist:list) -> None:
     global FEATURE_DICT
     counter = 1
