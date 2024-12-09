@@ -34,7 +34,7 @@ def command_choice(flist:list) -> None:
     elif proceed == "N":
         print("END")
 
-def main(flist=FEATURE_LIST):
+def main(flist:list=FEATURE_LIST) -> None:
     create_fdict()
     print("Filters for Image conversion:")
     command_choice(flist)
