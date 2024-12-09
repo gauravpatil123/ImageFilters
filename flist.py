@@ -18,6 +18,11 @@ def create_fdict(flist:list=FEATURE_LIST) -> None:
         id = idx + 1
         FEATURE_DICT[id] = flist[idx]
 
+def display_filters(counter:int, flist:list) -> None:
+    for filter in flist:
+        print(str(counter)+") "+filter)
+        counter += 1
+
 def command_choice(flist:list) -> None:
     global FEATURE_DICT
     counter = 1
