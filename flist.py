@@ -36,12 +36,6 @@ def command_choice(flist:list) -> None:
     global FEATURE_DICT
     counter = 1
     display_filters(counter, flist)
-    # choice = input("Input filter choice number for image conversion.\n")
-    # slected_filter = FEATURE_DICT[int(choice)]
-    # conv_command = "java ImageStyle "+ slected_filter
-    # print("Chosen filter is "+slected_filter+"\nDo you want to proceed? (Y/N)")
-    # proceed = str(input())
-    # proceed = proceed.upper
     choice = authenticate_choice(FEATURE_DICT)
     proceed = choice[0]
     if proceed == "Y":
