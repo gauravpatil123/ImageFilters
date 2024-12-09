@@ -12,7 +12,7 @@ FEATURE_DICT = {}
 
 #TODO: add image hide feature and improve terminal interface
 
-def create_fdict(flist=FEATURE_LIST):
+def create_fdict(flist:list=FEATURE_LIST) -> None:
     global FEATURE_DICT
     for idx in range(len(flist)):
         id = idx + 1
