@@ -18,7 +18,7 @@ def create_fdict(flist:list=FEATURE_LIST) -> None:
         id = idx + 1
         FEATURE_DICT[id] = flist[idx]
 
-def command_choice(flist:list):
+def command_choice(flist:list) -> None:
     global FEATURE_DICT
     counter = 1
     for filter in flist:
