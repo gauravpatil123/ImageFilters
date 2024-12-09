@@ -26,9 +26,6 @@ def display_filters(counter:int, flist:list) -> None:
 def command_choice(flist:list) -> None:
     global FEATURE_DICT
     counter = 1
-    # for filter in flist:
-    #     print(str(counter)+") "+filter)
-    #     counter += 1
     display_filters(counter, flist)
     choice = input("Input filter choice number for image conversion.\n")
     slected_filter = FEATURE_DICT[int(choice)]
