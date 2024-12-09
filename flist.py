@@ -37,6 +37,7 @@ def command_choice(flist:list) -> None:
         os.system(conv_command)
     elif proceed == "N":
         print("END")
+    #TODO: add one more else condition to hande other inputs
 
 def main(flist:list=FEATURE_LIST) -> None:
     create_fdict()
