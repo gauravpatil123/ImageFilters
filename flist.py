@@ -23,6 +23,15 @@ def display_filters(counter:int, flist:list) -> None:
         print(str(counter)+") "+filter)
         counter += 1
 
+def authenticate_choice(fdict:dict) -> list:
+    choice = input("Input filter choice number for image conversion.\n")
+    slected_filter = fdict[int(choice)]
+    conv_command = "java ImageStyle "+ slected_filter
+    print("Chosen filter is "+slected_filter+"\nDo you want to proceed? (Y/N)")
+    proceed = str(input())
+    proceed = proceed.upper
+    return [proceed, conv_command]
+
 def command_choice(flist:list) -> None:
     global FEATURE_DICT
     counter = 1
