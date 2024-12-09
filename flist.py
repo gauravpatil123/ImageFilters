@@ -32,6 +32,7 @@ def command_choice(flist:list) -> None:
     conv_command = "java ImageStyle "+ slected_filter
     print("Chosen filter is "+slected_filter+"\nDo you want to proceed? (Y/N)")
     proceed = str(input())
+    proceed = proceed.upper
     if proceed == "Y":
         os.system(conv_command)
     elif proceed == "N":
