@@ -38,6 +38,8 @@ def execute_choice(choice:list) -> None:
         os.system(conv_command)
     elif proceed == "N" or proceed == "n":
         print("END")
+    else:
+        print("Invalid Choice: Try again")
     #TODO: add one more else condition to hande other inputs
 
 def command_choice(flist:list) -> None:
