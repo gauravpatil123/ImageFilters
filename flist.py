@@ -29,15 +29,14 @@ def authenticate_choice(fdict:dict) -> list:
     conv_command = "java ImageStyle "+ slected_filter
     print("Chosen filter is "+slected_filter+"\nDo you want to proceed? (Y/N)")
     proceed = str(input())
-    proceed = proceed.upper
     return [proceed, conv_command]
 
 def execute_choice(choice:list) -> None:
     proceed = choice[0]
-    if proceed == "Y":
+    if proceed == "Y" or proceed == "y":
         conv_command = choice[1]
         os.system(conv_command)
-    elif proceed == "N":
+    elif proceed == "N" or proceed == "n":
         print("END")
     #TODO: add one more else condition to hande other inputs
 
