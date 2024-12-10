@@ -47,6 +47,7 @@ def execute_choice(choice:list) -> None:
         print("END")
     else:
         print("Invalid Choice: Try again")
+        execute_choice(choice)
     #TODO: add one more else condition to handle other inputs and use reccursion
 
 def command_choice(flist:list) -> None:
