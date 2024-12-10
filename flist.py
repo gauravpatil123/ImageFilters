@@ -32,16 +32,11 @@ def authenticate_choice(fdict:dict) -> list:
     # return [proceed, conv_command]
     return [selected_filter, conv_command]
 
-def initiate_proceed() -> None:
-    print("Chosen filter is "+slected_filter+"\nDo you want to proceed? (Y/N)")
+def initiate_proceed(choice:list) -> str:
+    selected_filter = choice[0]
+    print("Chosen filter is "+selected_filter+"\nDo you want to proceed? (Y/N)")
     proceed = str(input())
-    if proceed == "Y" or proceed == "y":
-        conv_command = choice[1]
-        os.system(conv_command)
-    elif proceed == "N" or proceed == "n":
-        print("END")
-    else:
-        print("Invalid Choice: Try again")
+    return proceed
 
 def execute_choice(choice:list) -> None:
     proceed = choice[0]
