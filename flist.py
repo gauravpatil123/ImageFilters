@@ -39,9 +39,9 @@ def initiate_proceed(choice:list) -> str:
     return proceed
 
 def execute_choice(choice:list) -> None:
-    proceed = choice[0]
+    proceed = initiate_proceed(choice)
+    conv_command = choice[1]
     if proceed == "Y" or proceed == "y":
-        conv_command = choice[1]
         os.system(conv_command)
     elif proceed == "N" or proceed == "n":
         print("END")
