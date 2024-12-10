@@ -31,6 +31,9 @@ def authenticate_choice(fdict:dict) -> list:
     proceed = str(input())
     return [proceed, conv_command]
 
+def initiate_proceed(proceed:str) -> None:
+    pass
+
 def execute_choice(choice:list) -> None:
     proceed = choice[0]
     if proceed == "Y" or proceed == "y":
