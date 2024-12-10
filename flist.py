@@ -23,13 +23,14 @@ def display_filters(counter:int, flist:list) -> None:
         print(str(counter)+") "+filter)
         counter += 1
 
-def authenticate_choice(fdict:dict) -> list:
+def authenticate_choice(fdict:dict) -> str:
     choice = input("Input filter choice number for image conversion.\n")
     slected_filter = fdict[int(choice)]
     conv_command = "java ImageStyle "+ slected_filter
-    print("Chosen filter is "+slected_filter+"\nDo you want to proceed? (Y/N)")
-    proceed = str(input())
-    return [proceed, conv_command]
+    # print("Chosen filter is "+slected_filter+"\nDo you want to proceed? (Y/N)")
+    # proceed = str(input())
+    # return [proceed, conv_command]
+    return conv_command
 
 def initiate_proceed(choice:list) -> None:
     proceed = choice[0]
