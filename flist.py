@@ -27,9 +27,6 @@ def authenticate_choice(fdict:dict) -> list:
     choice = input("Input filter choice number for image conversion.\n")
     selected_filter = fdict[int(choice)]
     conv_command = "java ImageStyle "+ selected_filter
-    # print("Chosen filter is "+slected_filter+"\nDo you want to proceed? (Y/N)")
-    # proceed = str(input())
-    # return [proceed, conv_command]
     return [selected_filter, conv_command]
 
 def initiate_proceed(choice:list) -> str:
