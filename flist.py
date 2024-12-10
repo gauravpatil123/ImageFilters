@@ -3,6 +3,8 @@ Feature List for Image conversion arguments
 """
 import os
 
+#TODO: make FEATURE_LIST variable generator fxn by importing external datafile(csv mostly)
+
 FEATURE_LIST = ["grayScale", "Purple", "Saffron", "Color", 
                 "Side_Mirror", "Top_Mirror", "Contrast", "Indian_Flag", 
                 "RandomPix", "RandomPix2", "SwitchPix", 
