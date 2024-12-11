@@ -11,4 +11,5 @@
 9. Random Pix
 10. Random Pix 2
 11. Switch Pix
+12. Switch Random Pix
 ## TODO List
