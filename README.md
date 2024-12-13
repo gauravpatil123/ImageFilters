@@ -13,4 +13,5 @@
 11. Switch Pix
 12. Switch Random Pix
 13. 4 Styles
+14. Rd 4 styles
 ## TODO List
