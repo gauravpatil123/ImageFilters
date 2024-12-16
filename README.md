@@ -17,3 +17,4 @@
 ## TODO List
 1. Make external feature list db/csv
 2. Add image hide feature
+3. Improve terminal interface
