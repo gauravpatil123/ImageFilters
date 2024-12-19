@@ -19,3 +19,4 @@
 2. Add variavle generator for feature list
 3. Add image hide feature
 4. Improve terminal interface
+5. Make docstrings for every file
