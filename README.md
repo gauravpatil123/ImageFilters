@@ -21,3 +21,4 @@
 4. Improve terminal interface
 5. Make docstrings for every file
 ## In Progress
+1. Hide Image
