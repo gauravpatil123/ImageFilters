@@ -22,3 +22,4 @@
 5. Make docstrings for every file
 ## In Progress
 1. Hide Image
+2. Unhide Image
