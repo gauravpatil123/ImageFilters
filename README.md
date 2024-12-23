@@ -23,3 +23,4 @@
 ## In Progress
 1. Hide Image
 2. Unhide Image
+3. Command line interface
