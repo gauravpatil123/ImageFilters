@@ -24,3 +24,4 @@
 1. Hide Image
 2. Unhide Image
 3. Command line interface
+4. Stegnographiy algorithm
