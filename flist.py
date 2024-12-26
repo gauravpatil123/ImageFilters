@@ -13,6 +13,7 @@ FEATURE_LIST = ["grayScale", "Purple", "Saffron", "Color",
 FEATURE_DICT = {}
 
 #TODO: add image hide feature and improve terminal interface
+#TODO: document the fuctions for future reference
 
 def create_fdict(flist:list=FEATURE_LIST) -> None:
     global FEATURE_DICT
