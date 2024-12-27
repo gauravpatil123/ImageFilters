@@ -16,6 +16,12 @@ FEATURE_DICT = {}
 #TODO: document the fuctions for future reference
 
 def create_fdict(flist:list=FEATURE_LIST) -> None:
+    """
+    Input:
+        flist: list of features
+    Action:
+        creates a dictionary of ids and features
+    """
     global FEATURE_DICT
     for idx in range(len(flist)):
         id = idx + 1
