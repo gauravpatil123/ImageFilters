@@ -28,6 +28,13 @@ def create_fdict(flist:list=FEATURE_LIST) -> None:
         FEATURE_DICT[id] = flist[idx]
 
 def display_filters(counter:int, flist:list) -> None:
+    """
+    Input:
+        counter: int representing the counter number
+        flist: feature list 
+    Action:
+        prints a list of counter number and the corresponding features
+    """
     for filter in flist:
         print(str(counter)+") "+filter)
         counter += 1
