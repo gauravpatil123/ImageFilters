@@ -40,6 +40,18 @@ def display_filters(counter:int, flist:list) -> None:
         counter += 1
 
 def authenticate_choice(fdict:dict) -> list:
+    """
+    Input:
+        fdict: dictionary with index as keys and features as value
+    Output:
+        Alist of slected_filter and conv_command
+        selected_filter: the string value of feature from fdict
+        conv_command: string command to execute the selected filter 
+                        from the java class in cammand line terminal
+    Action:
+        takes the input geature number and outputs the list of 
+        selected filter and corresponding command to execute java class
+    """
     choice = input("Input filter choice number for image conversion.\n")
     selected_filter = fdict[int(choice)]
     conv_command = "java ImageStyle "+ selected_filter
