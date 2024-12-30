@@ -58,6 +58,14 @@ def authenticate_choice(fdict:dict) -> list:
     return [selected_filter, conv_command]
 
 def initiate_proceed(choice:list) -> str:
+    """
+    Input:
+        choice: a lisy of string containing a selected choice filter & 
+                corresponding java class command
+    Output:
+        proceed: string input from command line inorder 
+                to feed in the execution loop
+    """
     selected_filter = choice[0]
     print("Chosen filter is "+selected_filter+"\nDo you want to proceed? (Y/N)")
     proceed = str(input())
