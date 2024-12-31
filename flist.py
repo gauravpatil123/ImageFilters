@@ -72,6 +72,15 @@ def initiate_proceed(choice:list) -> str:
     return proceed
 
 def execute_choice(choice:list) -> None:
+    """
+    Input:
+        choice: List of use input choice arguments containing choice filter &
+                corresponding java exec class command
+    Action:
+        initialtes and executes initiate_procedd fxn
+        and using user choice to determine whether or not to proceed 
+        with choice execution using the java class command
+    """
     proceed = initiate_proceed(choice)
     conv_command = choice[1]
     if proceed == "Y" or proceed == "y":
