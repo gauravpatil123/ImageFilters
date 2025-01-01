@@ -92,6 +92,14 @@ def execute_choice(choice:list) -> None:
         execute_choice(choice)
 
 def command_choice(flist:list) -> None:
+    """
+    Input:
+        flist: feature list
+    Action:
+        displays list of executable features
+        authenticates user's choice
+        executes the users choice
+    """
     global FEATURE_DICT
     counter = 1
     display_filters(counter, flist)
