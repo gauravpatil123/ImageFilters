@@ -107,6 +107,14 @@ def command_choice(flist:list) -> None:
     execute_choice(choice)
 
 def main(flist:list=FEATURE_LIST) -> None:
+    """
+    Input:
+        flist: feature list
+    Action:
+        main fxn
+        creates feature dictionary
+        executes command_choice fxn
+    """
     create_fdict()
     print("Filters for Image conversion:")
     command_choice(flist)
