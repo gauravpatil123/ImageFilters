@@ -1,4 +1,9 @@
 """
+Script: flist.py
+Author: GP
+
+Notes: //
+
 Feature List for Image conversion arguments
 """
 import os
