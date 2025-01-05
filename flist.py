@@ -2,7 +2,8 @@
 Script: flist.py
 Author: GP
 
-Notes: //
+Notes: Creates feature dictionay from feature list
+        //
 
 Feature List for Image conversion arguments
 """
