@@ -3,7 +3,7 @@ Script: flist.py
 Author: GP
 
 Notes: Creates feature dictionay from feature list
-        //
+       Creates a commanf line interface for users to choose filters from the list
 
 Feature List for Image conversion arguments
 """
