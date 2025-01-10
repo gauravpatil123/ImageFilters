@@ -5,8 +5,6 @@ Author: GP
 Notes: Creates feature dictionay from feature list
        Creates a command line interface for users to choose filters from the list
        Generates Image conversion arguments for java class to execute
-
-Feature List for Image conversion arguments
 """
 import os
 
