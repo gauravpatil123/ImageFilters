@@ -19,10 +19,10 @@
 2. Add variavle generator for feature list
 3. Add image hide feature
 4. Improve terminal interface
-5. Make docstrings for every file
 ## In Progress
 1. Hide Image
 2. Unhide Image
 3. Command line interface
 4. Stegnographiy algorithm
 5. Testing extraction algorithm
+6. Make docstrings for every file
