@@ -16,7 +16,7 @@
 14. Rd 4 styles
 ## TODO List
 1. Make external feature list db/csv
-2. Add variavle generator for feature list
+2. Add variable generator for feature list
 3. Add image hide feature
 4. Improve terminal interface
 ## In Progress
