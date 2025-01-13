@@ -17,8 +17,9 @@
 ## TODO List
 1. Make external feature list db/csv
 2. Add variable generator for feature list
-3. Add image hide feature
-4. Improve terminal interface
+3. Integrate extrenal feature list in flist
+4. Add image hide feature
+5. Improve terminal interface
 ## In Progress
 1. Hide Image
 2. Unhide Image
