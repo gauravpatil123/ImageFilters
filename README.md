@@ -19,7 +19,8 @@
 2. Add variable generator for feature list
 3. Integrate extrenal feature list in flist
 4. Add image hide feature + test
-5. Improve terminal interface to have gui
+5. Improve terminal interface
+6. Make a gui
 ## In Progress
 1. Hide Image
 2. Unhide Image
