@@ -21,6 +21,7 @@
 4. Add image hide feature + test
 5. Improve terminal interface
 6. Make a gui
+7. Test Gui
 ## In Progress
 1. Hide Image
 2. Unhide Image
