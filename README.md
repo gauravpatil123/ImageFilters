@@ -20,8 +20,7 @@
 3. Integrate extrenal feature list in flist
 4. Add image hide feature + test
 5. Improve terminal interface
-6. Make a gui
-7. Test Gui
+6. Make a gui + test
 ## In Progress
 1. Hide Image
 2. Unhide Image
